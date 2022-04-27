@@ -23,22 +23,33 @@ module.exports = {
             {
                 test: /\.s(a|c)ss$/,
                 exclude: /node_modules/,
+                // use: [
+                //     production ? MiniCssExtractPlugin.loader : 'style-loader',
+                //     {
+                //         loader: 'css-loader',
+                //         options: {
+                //             modules: true,
+                //             sourceMap: !production
+                //         }
+                //     },
+                //     {
+                //         loader: 'sass-loader',
+                //         options: {
+                //             sourceMap: !production
+                //         }
+                //     }
+                // ]
                 use: [
-                    production ? MiniCssExtractPlugin.loader : 'style-loader',
                     {
-                        loader: 'css-loader',
+                        loader: MiniCssExtractPlugin.loader,
                         options: {
-                            modules: true,
-                            sourceMap: !production
+                            publicPath: (resourcePath, context) => {
+                                return path.relative(path.dirname(resourcePath), context) + '/';
+                            },
                         }
                     },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: !production
-                        }
-                    }
-                ]
+                    "css-loader",
+                    "sass-loader"]
             },
 
         ],
