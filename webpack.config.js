@@ -3,6 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const production = process.env.NODE_ENV === 'production';
 
@@ -51,6 +52,12 @@ module.exports = {
                     "css-loader",
                     "sass-loader"]
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [{
+                    loader: 'file-loader'
+                }]
+            },
 
         ],
     },
@@ -68,6 +75,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: production ? '[name].[contenthash].css' : '[name].css',
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {from: path.resolve(__dirname, 'source/assets'), to: path.resolve(__dirname, 'dist')}
+            ]
+        })
     ],
     devServer: {
         historyApiFallback: true,

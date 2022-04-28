@@ -1,8 +1,10 @@
 import react from "react";
+import BlockItems from '../components/BlockItems/Blockitems.jsx'
+
 
 function Home() {
     return <>
-        <h1 className="h1">Home</h1>
+        <BlockItems />
         
     </>
 }

@@ -1,0 +1,15 @@
+@mixin anim($e, $d) {
+    -webkit-transition: all $e ease $d;
+    -o-transition: all $e ease $d;
+    transition: all $e ease $d;
+  }
+  @mixin scale($q) {
+    -ms-transform: scale($q);
+    -webkit-transform: scale($q);
+    transform: scale($q);
+  }
+  @mixin rotate($w) {
+    -ms-transform: rotate($w);
+    -webkit-transform: rotate($w);
+    transform: rotate($w);
+  }

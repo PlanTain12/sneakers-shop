@@ -19,8 +19,8 @@ const App = () => {
             <div className="white-page">
                 <Header />
                     <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='/bucket' element={<Bucket />} />
+                        <Route path='/' element={<Home />} exact />
+                        <Route path='/bucket' element={<Bucket />} exact />
                     </Routes>
                 <Footer />
             </div>

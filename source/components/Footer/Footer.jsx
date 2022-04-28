@@ -1,13 +1,14 @@
 import react from "react";
-import './footer.scss'
-
+import './footer.scss';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
 
     return (
-        <div className="header">
-            <h1>Footer</h1>
-        </div>
+        <footer className="footer">
+            <Link to="/" className="footer__logo">Sneakers</Link>
+            <a href="https://github.com/PlanTain12/sneakers-shop" className="footer__github">PlanTain12 (2022)</a>
+        </footer>
     )
 }
 

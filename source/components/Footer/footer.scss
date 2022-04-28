@@ -1,0 +1,42 @@
+.footer {
+    width: 100%;
+    background: #DDF9FF;
+    border-radius: 0px 0px 40px 40px ;
+    box-sizing: border-box;
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 36px;
+        color: #000000;
+    }
+
+    &__github {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        
+        color: #000000;
+        
+    }
+    @media (max-width: 540px) {
+        padding: 20px 30px;
+        &__logo {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    
+        &__github {
+            font-size: 14px;
+            line-height: 14px;
+            
+        }
+    }
+}
