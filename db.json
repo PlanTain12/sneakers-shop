@@ -1,6 +1,60 @@
 {
-    "items" : [
-        "name"
-        
+    "sneakers" : [
+        {
+            "id" : 0,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/1.jpg",
+            "name" : "addidas",
+            "price" : 9000,
+            "category" : 0
+        },
+        {
+            "id" : 1,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/2.jpg",
+            "name" : "addidas",
+            "price" : 10000,
+            "category" : 0
+        },
+        {
+            "id" : 2,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/3.jpg",
+            "name" : "addidas",
+            "price" : 11000,
+            "category" : 0
+        },
+        {
+            "id" : 3,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/4.jpg",
+            "name" : "addidas",
+            "price" : 9990,
+            "category" : 0
+        },
+        {
+            "id" : 4,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/5.jpg",
+            "name" : "nike",
+            "price" : 20000,
+            "category" : 1
+        },
+        {
+            "id" : 5,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/6.jpg",
+            "name" : "nike",
+            "price" : 17000,
+            "category" : 1
+        },
+        {
+            "id" : 6,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/7.jpg",
+            "name" : "reebok",
+            "price" : 8000,
+            "category" : 2
+        },
+        {
+            "id" : 7,
+            "imageUrl" : "https://github.com/PlanTain12/sneakers-shop/blob/master/source/assets/8.jpg",
+            "name" : "reebok",
+            "price" : 10000,
+            "category" : 2
+        }
     ]
 }
