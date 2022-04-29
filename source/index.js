@@ -2,9 +2,7 @@ import App from './app';
 
 import ReactDOM from "react-dom";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route
+    BrowserRouter as Router
   } from "react-router-dom";
 
 

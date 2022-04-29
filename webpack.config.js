@@ -69,8 +69,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             title: "Webpack & React",
-            template: "./source/index.html",
-            // favicon: "./public/favicon.ico"
+            template: "./source/index.html"
         }),
         new MiniCssExtractPlugin({
             filename: production ? '[name].[contenthash].css' : '[name].css',
@@ -87,7 +86,8 @@ module.exports = {
         open: true,
         compress: true,
         hot: true,
-        port: 5000
+        port: 5000,
+        allowedHosts: 'all',
     },
     mode: production ? 'production' : 'development'
 };

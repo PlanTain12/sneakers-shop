@@ -10,7 +10,6 @@ function Menu({items}) {
         setActiveItem(index);
     };
 
-    const activeName = items[activeItem];
 
 
 

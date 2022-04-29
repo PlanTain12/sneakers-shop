@@ -1,0 +1,98 @@
+.order {
+    max-width: 350px;
+    text-align: left;
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    &__summery {
+        display: flex;
+        align-items: center;
+        max-width: 250px;
+        justify-content: space-between;
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+}
+
+.b-o {
+    margin: 40px 0px;
+}
+
+.i-o {
+    background: #F2F2F2;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    &__pic {
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+        }
+    }
+}
+
+.si-o {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 175px;
+    &__title {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 0px 10px 0px 0px;
+        padding: 3px 7px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+        }
+    }
+
+    &__button {
+        width: 175px;
+        button {
+            background: #CBF1FE;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 0px 0px 10px 0px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            padding: 10px 0px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            color: #000000;
+        }
+    }
+}

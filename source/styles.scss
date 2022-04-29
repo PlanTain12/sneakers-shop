@@ -136,3 +136,16 @@ body {
     border-radius: 50px;
 }
 
+.bucket {
+  width: 100%;
+  margin: 75px 0px 100px 0px;
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__del {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}

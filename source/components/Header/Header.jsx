@@ -1,6 +1,6 @@
-import react from "react";
+import React from "react";
 import './header.scss'
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Filter from "./Filter";
 import Menu from "./Menu";
 
@@ -22,8 +22,8 @@ const Header = () => {
                 </div>
             </div>
                 <div className="header__second-part-t1 hs-p1">
-                    <Menu items={['sdvds', 'dsvsdvsdv', 'dvsdavdv']} />
-                    <Filter items={[{name: 'Популярные', type: 'popular'}, {name: 'Цена', type: 'price'}, {name: 'Дата', type: 'data'}]} />
+                    <Menu items={['nike', 'addidas', 'rebook']} />
+                    <Filter items={[{name: 'Популярные', type: 'popular'}, {name: 'Дороже', type: 'price-high'}, {name: 'Дешевле', type: 'price-low'}, {name: 'Дата', type: 'data'}]} />
                 </div>
                 <div className="header__second-part-t1 hs-p2">
                     <h1>Корзина</h1>
